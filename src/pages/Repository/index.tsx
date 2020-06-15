@@ -7,7 +7,7 @@ import { FiRefreshCw, FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import Container from '../../components/Container';
-import { Loading, Owner, Back } from './styles';
+import { Loading, Owner, Back, IssueList } from './styles';
 
 interface Params {
   repository: string;
@@ -28,7 +28,19 @@ interface RepositoryData {
 
 interface State {
   repository: RepositoryData;
-  issues: string[];
+  issues: {
+    id: string;
+    title: string;
+    html_url: string;
+    user: {
+      avatar_url: string;
+      login: string;
+    };
+    labels: {
+      id: string;
+      name: string;
+    }[];
+  }[];
   loading: boolean;
 }
 
@@ -108,6 +120,28 @@ export default class Repository extends React.Component<
           <h1>{repository.name}</h1>
           <p>{repository.description}</p>
         </Owner>
+
+        <IssueList>
+          {issues.map((issue) => {
+            return (
+              <li key={String(issue.id)}>
+                <img src={issue.user.avatar_url} alt={issue.user.login} />
+                <div>
+                  <strong>
+                    <a target="_blank" rel="noreferrer" href={issue.html_url}>
+                      {issue.title}
+                      {issue.labels.map((label) => {
+                        return <span key={String(label.id)}>{label.name}</span>;
+                      })}
+                      {/* as labels são uma array por isso que estou fazendo um map */}
+                    </a>
+                  </strong>
+                  <p>{issue.user.login}</p>
+                </div>
+              </li>
+            );
+          })}
+        </IssueList>
       </Container>
     );
   }
