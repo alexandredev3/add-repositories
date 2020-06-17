@@ -60,7 +60,7 @@
 ## 📝 License
 
 Copyright © 2020 [Alexandre Costa](https://github.com/alexandredev3).<br />
-This project is [MIT]() licensed.
+This project is [MIT](https://github.com/alexandredev3/add-repositories/blob/master/LICENSE.txt) licensed.
 
 <p align="center">
   <strong> With :heart: </strong> <a target="_blank" href="https://github.com/alexandredev3">Alexandre Costa</a>
