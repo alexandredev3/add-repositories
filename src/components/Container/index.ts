@@ -22,11 +22,6 @@ const Container = styled.div`
   svg {
     margin-right: 5px;
   }
-
-  p {
-    color: #ff4a3d;
-    margin-top: 5px;
-  }
 `;
 
 export default Container;
