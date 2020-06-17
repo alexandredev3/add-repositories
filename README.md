@@ -56,3 +56,12 @@
 
   * Github: [@alexandredev3](https://github.com/alexandredev3)
   * Linkedin: [@alexandreCosta](https://www.linkedin.com/in/alexandre-costa-401699199/)
+
+## 📝 License
+
+Copyright © 2020 [Alexandre Costa](https://github.com/alexandredev3).<br />
+This project is [MIT]() licensed.
+
+<p align="center">
+  <strong> With ❤ </strong> <a target="_blank" href="https://github.com/alexandredev3">Alexandre Costa</a>🚀
+</p>
