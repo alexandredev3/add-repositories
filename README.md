@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/alexandredev3/ecoleta-nlw01/blob/master/logo-ecoleta.png" />
+  <img src="https://github.com/alexandredev3/add-repositories/blob/master/logo%20repositories.png" />
 </h1>
 
 <p align="center">
